@@ -1,11 +1,8 @@
-import 'package:learnflutter_mvp/repository/mock_contact_repository.dart';
-import 'package:learnflutter_mvp/repository/random_user_repository.dart';
-import 'package:learnflutter_mvp/model/contact.dart';
+import 'package:learnflutter_mvp/repository/contact/mock_contact_repository.dart';
+import 'package:learnflutter_mvp/repository/contact/random_user_repository.dart';
+import 'package:learnflutter_mvp/repository/contact/contact_repository.dart';
 
-enum Flavor {
-  MOCK,
-  PRO
-}
+enum Flavor { MOCK, PRO }
 
 /// Simple DI
 class Injector {
@@ -23,10 +20,17 @@ class Injector {
   Injector._internal();
 
   ContactRepository get contactRepository {
-    switch(_flavor) {
-      case Flavor.MOCK: return new MockContactRepository();
-      default: // Flavor.PRO:
+    switch (_flavor) {
+      case Flavor.MOCK:
+        return new MockContactRepository();
+      default:
         return new RandomUserRepository();
     }
   }
+/**
+ * example
+ * UserRepository get getUser{
+ *   return <repository class call api>
+ * }
+ */
 }

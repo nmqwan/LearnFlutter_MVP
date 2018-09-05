@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'contact_repository.dart';
 import 'package:learnflutter_mvp/model/contact.dart';
 
 class MockContactRepository implements ContactRepository {

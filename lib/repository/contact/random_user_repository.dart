@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:learnflutter_mvp/ultils/fetch_data_exception.dart';
 import 'package:learnflutter_mvp/model/contact.dart';
+import 'contact_repository.dart';
 
 class RandomUserRepository implements ContactRepository {
 

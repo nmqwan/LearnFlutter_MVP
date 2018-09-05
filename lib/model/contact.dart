@@ -1,5 +1,3 @@
-import 'dart:async';
-
 class Contact {
   final String fullName;
   final String email;
@@ -11,8 +9,4 @@ class Contact {
         email = map['email'];
 }
 
-
-abstract class ContactRepository {
-  Future<List<Contact>> fetch();
-}
 

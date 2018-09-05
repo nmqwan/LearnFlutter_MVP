@@ -1,5 +1,6 @@
 import 'package:learnflutter_mvp/model/contact.dart';
 import 'package:learnflutter_mvp/injection/dependency_injection.dart';
+import 'package:learnflutter_mvp/repository/contact/contact_repository.dart';
 
 abstract class ContactListViewContract {
   void onLoadContactsComplete(List<Contact> items);
