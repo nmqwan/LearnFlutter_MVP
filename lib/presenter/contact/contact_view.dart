@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter_mvp/model/contact.dart';
-import 'package:learnflutter_mvp/presenter/contact_presenter.dart';
+import 'package:learnflutter_mvp/presenter/contact/contact_presenter.dart';
 
 class ContactsPage extends StatelessWidget {
   @override

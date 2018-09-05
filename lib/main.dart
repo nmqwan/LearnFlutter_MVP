@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'view/contact_view.dart';
+import 'package:learnflutter_mvp/presenter/contact/contact_view.dart';
 
 void main() => runApp(new MyApp());
 
